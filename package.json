@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/reggullus/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/reggullus/frontend-project-lvl2/actions)",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/reggullus/frontend-project-lvl2/issues"
   },
-  "homepage": "https://github.com/reggullus/frontend-project-lvl2#readme"
+  "homepage": "https://github.com/reggullus/frontend-project-lvl2#readme",
+  "dependencies": {
+    "commander": "^9.0.0"
+  }
 }
