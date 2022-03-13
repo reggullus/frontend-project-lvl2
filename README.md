@@ -10,4 +10,5 @@
 Clone this repository &
 Run the command: make install
 ###  Сomparing two flat files
+
 [![asciicast](https://asciinema.org/a/476198.svg)](https://asciinema.org/a/476198)
