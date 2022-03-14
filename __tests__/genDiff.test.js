@@ -2,8 +2,11 @@ import { test, expect } from '@jest/globals';
 import getFileСompare from '../index.js';
 import readFile from '../src/getPath.js';
 
-const file1 = readFile('filepath1');
-const file2 = readFile('filepath2');
+const file1 = 'filepath1.json';
+const file2 = 'filepath2.json';
+const result = readFile('flat.txt');
+const d = getFileСompare(file1, file2);
+console.log(d);
 test('flatfile', () => {
-  expect(getFileСompare(file1, file2)).toMatch(readFile('flat.txt'));
+  expect(getFileСompare(file1, file2)).toEqual(result);
 });

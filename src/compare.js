@@ -21,7 +21,7 @@ const getFileСompare = (data1, data2) => {
     }
     return `  - ${key}: ${file1Value}\n  + ${key}: ${file2Value}`;
   });
-  return `{ \n${getCompare.join('\n')}\n}`;
+  return `{\n${getCompare.join('\n')}\n}`;
 };
 
 export default getFileСompare;
