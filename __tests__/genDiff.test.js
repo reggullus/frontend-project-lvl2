@@ -5,8 +5,6 @@ import readFile from '../src/getPath.js';
 const file1 = 'filepath1.json';
 const file2 = 'filepath2.json';
 const result = readFile('flat.txt');
-const d = getFileСompare(file1, file2);
-console.log(d);
 test('flatfile', () => {
   expect(getFileСompare(file1, file2)).toEqual(result);
 });
