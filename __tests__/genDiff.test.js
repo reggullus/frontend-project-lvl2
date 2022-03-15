@@ -4,13 +4,13 @@ import { readFile } from '../src/getPath.js';
 
 const jsonFile1 = 'filepath1.json';
 const jsonFile2 = 'filepath2.json';
-const yamlFile1 = 'filepath1.yaml';
-const yamlFile2 = 'filepath2.yaml';
+const ymlFile1 = 'filepath1.yml';
+const ymlFile2 = 'filepath2.yml';
 const result = readFile('flat.txt');
 
 test('flatfile.json', () => {
   expect(getFileСompare(jsonFile1, jsonFile2)).toEqual(result);
 });
 test('flatfile.yml', () => {
-  expect(getFileСompare(yamlFile1, yamlFile2)).toEqual(result);
+  expect(getFileСompare(ymlFile1, ymlFile2)).toEqual(result);
 });
