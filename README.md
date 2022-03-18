@@ -6,7 +6,10 @@
 ### For installation:
 Clone this repository &
 Run the command: make install
-###  Сomparing two flat jason files
+### Examples
+###  Сomparing two flat jason files:
 [![asciicast](https://asciinema.org/a/476794.svg)](https://asciinema.org/a/476794)
-###  Сomparing two flat yml files
+###  Сomparing two flat yml files:
 [![asciicast](https://asciinema.org/a/476796.svg)](https://asciinema.org/a/476796)
+###  Сomparing two files with default format:
+[![asciicast](https://asciinema.org/a/478014.svg)](https://asciinema.org/a/478014)
