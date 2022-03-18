@@ -8,9 +8,9 @@ const ymlFile1 = 'filepath1.yml';
 const ymlFile2 = 'filepath2.yml';
 const result = readFile('flat.txt');
 
-test('flatfile.json', () => {
+test('test.json', () => {
   expect(getFileСompare(jsonFile1, jsonFile2)).toEqual(result);
 });
-test('flatfile.yml', () => {
+test('test.yml', () => {
   expect(getFileСompare(ymlFile1, ymlFile2)).toEqual(result);
 });
