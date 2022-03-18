@@ -10,4 +10,5 @@ const getFormat = (file) => path.extname(getFixturePath(file));
 export {
   readFile,
   getFormat,
+  getFixturePath,
 };

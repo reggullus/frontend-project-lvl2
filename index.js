@@ -1,3 +1,3 @@
-import getFileСompare from './src/compare.js';
+import getDiff from './src/getDiff.js';
 
-export default getFileСompare;
+export default getDiff;
