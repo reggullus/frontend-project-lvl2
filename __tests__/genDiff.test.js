@@ -7,10 +7,14 @@ const jsonFile2 = 'filepath2.json';
 const ymlFile1 = 'filepath1.yml';
 const ymlFile2 = 'filepath2.yml';
 const result = readFile('flat.txt');
+const plain = readFile('plain.txt');
 
 test('test.json', () => {
   expect(getFileСompare(jsonFile1, jsonFile2)).toEqual(result);
 });
 test('test.yml', () => {
   expect(getFileСompare(ymlFile1, ymlFile2)).toEqual(result);
+});
+test('plainformat', () => {
+  expect(getFileСompare(jsonFile1, jsonFile2, 'plain')).toEqual(plain);
 });
