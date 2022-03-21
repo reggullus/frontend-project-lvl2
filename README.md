@@ -3,10 +3,10 @@
 
 
 ### This console program compares two files and shows the difference.
-    Files are accepted of two types:
+### Two types of files are accepted
     1. JSON
     2. YML/YAML
-    The result of file comparison can be displayed in different formats:
+### The result of file comparison can be displayed in different formats:
     1.$ STYLISH format
     2.$ PLAIN format
     3.$ JSON format
