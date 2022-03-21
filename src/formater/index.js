@@ -8,6 +8,9 @@ const formatData = (data, formatType) => {
   if (formatType === 'plain') {
     return plain(data);
   }
+  if (formatType === 'json') {
+    return JSON.stringify(data);
+  }
   throw new Error('Unknown format type');
 };
 export default formatData;
