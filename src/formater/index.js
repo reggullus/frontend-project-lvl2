@@ -2,15 +2,15 @@ import stylish from './stylish.js';
 import plain from './plain.js';
 
 const formatData = (data, formatType) => {
-  if (formatType === 'stylish') {
-    return stylish(data);
+  switch (formatType) {
+    case 'stylish':
+      return stylish(data);
+    case 'plain':
+      return plain(data);
+    case 'json':
+      return JSON.stringify(data);
+    default:
+      throw new Error('Unknown format type');
   }
-  if (formatType === 'plain') {
-    return plain(data);
-  }
-  if (formatType === 'json') {
-    return JSON.stringify(data);
-  }
-  throw new Error('Unknown format type');
 };
 export default formatData;
