@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const getFixturePath = (filename) => path.resolve(__dirname, '..', '__fixtures__', filename);
 const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
-const getFormat = (file) => path.extname(getFixturePath(file));
+const getFormat = (file) => path.extname(file).slice(1);
 export {
   readFile,
   getFormat,
