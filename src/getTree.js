@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const getFileСompare = (data1, data2) => {
+const fileСompare = (data1, data2) => {
   const getKeys = _.sortBy(Object.keys({ ...data1, ...data2 }));
   const getCompare = getKeys.map((key) => {
     const oldValue = data1[key];
@@ -9,7 +9,7 @@ const getFileСompare = (data1, data2) => {
       return {
         name: key,
         type: 'nested',
-        value: getFileСompare(oldValue, newValue),
+        value: fileСompare(oldValue, newValue),
       };
     }
     if (oldValue === newValue) {
@@ -41,4 +41,4 @@ const getFileСompare = (data1, data2) => {
   });
   return getCompare;
 };
-export default getFileСompare;
+export default fileСompare;
